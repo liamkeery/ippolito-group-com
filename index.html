@@ -11,32 +11,61 @@
     
     <div class="grid-container full">
       
-        <div class="title-bar" data-responsive-toggle="main-navigation" data-hide-for="medium">
-          <div class="title-bar-left"><a class="menu-text logo">Ippolito Group</a></div>
-              <div class="title-bar-right"><button class="menu-icon" type="button" data-toggle="main-navigation"></button></div>
+      <div class="hero-full-screen">
+
+        <div class="top-content-section">
+          <div class="title-bar" data-responsive-toggle="main-navigation" data-hide-for="medium">
+            <div class="title-bar-left"><a class="menu-text logo">Ippolito Group</a></div>
+                <div class="title-bar-right"><button class="menu-icon" type="button" data-toggle="main-navigation"></button></div>
+          </div>
+          
+          <div class="top-bar" id="main-navigation">
+            <div class="top-bar-left">
+              <a class="menu-text logo hide-for-small-only">Ippolito Group</a>
+            </div>
+            <div class="top-bar-right">
+              <ul class="dropdown menu nav" data-dropdown-menu>
+                
+                <li><a href="#">HOME</a></li>
+                <li>
+                  <a href="#">ABOUT</a>
+                  <ul class="menu vertical">
+                    <li><a href="#">OUR PRODUCTS</a></li>
+                    <li><a href="#">CUSTOMER SEGMENTS</a></li>
+                    <li><a href="#">COMPANIES</a></li>
+                    <li><a href="#">HISTORY</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#" class="careers">CAREERS</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
+      
+        <div class="middle-content-section">
+          <h1>The Ippolito Group of Companies</h1>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra risus quis orci luctus gravida. Phasellus accumsan lacus sit amet ipsum euismod iaculis sed et justo.</p>
         
-        <div class="top-bar" id="main-navigation">
-          <div class="top-bar-left">
-            <a class="menu-text logo hide-for-small-only">Ippolito Group</a>
+          <div class="grid-x grid-padding-x" id="logos">
+            <div class="large-12 cell">
+              <img src="images/logos.svg" alt="The Ippolito Group of Companies">
+            </div>
           </div>
-          <div class="top-bar-right">
-            <ul class="dropdown menu" data-dropdown-menu>
-              
-              <li><a href="#">HOME</a></li>
-              <li>
-                <a href="#">ABOUT</a>
-                <ul class="menu vertical">
-                  <li><a href="#">OUR PRODUCTS</a></li>
-                  <li><a href="#">CUSTOMER SEGMENTS</a></li>
-                  <li><a href="#">COMPANIES</a></li>
-                  <li><a href="#">HISTORY</a></li>
-                </ul>
-              </li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
-          </div>
+
         </div>
+      
+        <div class="bottom-content-section" data-magellan data-threshold="0">
+          <a href="#main-content-section"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"/></svg></a>
+        </div>
+      
+      </div>
+      
+      <div id="main-content-section" data-magellan-target="main-content-section">
+        <!-- your content goes here -->
+      </div>
+
     </div> <!-- End Container --> 
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
