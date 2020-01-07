@@ -62,3 +62,65 @@
 // Motion UI
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+body {
+    background: #F0F0F0;
+}
+
+.menu-text {
+    font-family: $jomolhari;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 25px;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+.menu {
+    font-family: $roboto;
+}
+
+a {
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.top-bar {
+    background: $ippolito-purple;
+    height: 80px;
+
+    ul {
+        background: $ippolito-purple;
+    }
+}
+
+.top-bar-right {
+    margin-right: 25px;
+}
+
+.title-bar {
+    height: 80px;
+    background: $ippolito-purple;
+}
+
+.title-bar-right {
+    margin-right: 25px;
+}
+
+// Media Queries
+
+@media screen and (max-width: 39.9375em) {
+    .top-bar {
+        height: 70px;
+        ul {
+            margin: 0 auto;
+            width: 300px;
+        }
+    }
+}

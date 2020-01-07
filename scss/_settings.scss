@@ -100,6 +100,19 @@ $global-color-pick-contrast-tolerance: 0;
 $print-transparent-backgrounds: true;
 $print-hrefs: true;
 
+// Add Ippolito Colors
+
+$ippolito-purple: #4E2564;
+$ippolito-gold: #958036;
+
+// Add Ippolito Fonts
+
+@import url('https://fonts.googleapis.com/css?family=Jomolhari&display=swap');
+$jomolhari: 'Jomolhari', serif;
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+$roboto: 'Roboto', sans-serif;
+
 @include add-foundation-colors;
 
 // 2. Breakpoints
@@ -394,7 +407,7 @@ $drilldown-arrow-size: 6px;
 // ------------
 
 $dropdown-padding: 1rem;
-$dropdown-background: $body-background;
+$dropdown-background: $ippolito-purple;
 $dropdown-border: 1px solid $medium-gray;
 $dropdown-font-size: 1rem;
 $dropdown-width: 300px;
@@ -409,17 +422,17 @@ $dropdown-sizes: (
 // -----------------
 
 $dropdownmenu-arrows: true;
-$dropdownmenu-arrow-color: $anchor-color;
+$dropdownmenu-arrow-color: white;
 $dropdownmenu-arrow-size: 6px;
 $dropdownmenu-arrow-padding: 1.5rem;
 $dropdownmenu-min-width: 200px;
-$dropdownmenu-background: null;
+$dropdownmenu-background: $ippolito-purple;
 $dropdownmenu-submenu-background: $white;
 $dropdownmenu-padding: $global-menu-padding;
 $dropdownmenu-nested-margin: 0;
 $dropdownmenu-submenu-padding: $dropdownmenu-padding;
 $dropdownmenu-border: 1px solid $medium-gray;
-$dropdown-menu-item-color-active: get-color(primary);
+$dropdown-menu-item-color-active: white;
 $dropdown-menu-item-background-active: transparent;
 
 // 19. Flexbox Utilities
