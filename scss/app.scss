@@ -90,9 +90,20 @@ a {
     color: white;
 }
 
+a:visited {
+    color: white;
+}
+
 a:hover{
     text-decoration: underline;
     color: white;
+}
+
+.careers {
+    color: white;
+    background: $ippolito-gold !important;
+    border: 1px solid white;
+    border-radius: 10px;
 }
 
 .top-bar {
@@ -170,6 +181,62 @@ a:hover{
 
 #logos {
     margin-bottom: 50px;
+}
+
+// Products Section
+
+.products {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
+    box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
+}
+
+#product-section {
+    margin-bottom: 50px;
+}
+
+.heading {
+    color: $ippolito-purple;
+    font-family: $jomolhari;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.icon {
+    display: block;
+    margin: 0 auto;
+}
+
+.slide-heading {
+    color: $ippolito-purple;
+    font-family: $roboto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.slide-desc {
+    width: 500px;
+    color: black;
+    font-family: $roboto;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.orbit-previous {
+    color: $ippolito-purple;
+    font-size: 2.5rem;
+}
+
+.orbit-next {
+    color: $ippolito-purple;
+    font-size: 2.5rem;
 }
 
 // Media Queries
