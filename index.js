@@ -7,7 +7,7 @@ app.use('/js', express.static(__dirname + '/js'))
 app.use('/bower_components', express.static(__dirname + '/bower_components'))
 
 app.get('/', function (request, response) {
-    response.sendFile('/', { root: __dirname })
+    response.sendFile('index.html', { root: __dirname })
 })
 
 app.listen(app.get('port'), function () {
