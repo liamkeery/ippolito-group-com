@@ -1,6 +1,9 @@
 {
   "name": "ippolito",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.7.0"
+  },
   "description": "Website built for Ippolito Group of Companies.",
   "main": "gulpfile.js",
   "scripts": {
