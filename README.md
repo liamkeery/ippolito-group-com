@@ -6,7 +6,7 @@ To run this project locally:
 
 ## Install the Dependencies:
 
-```npm start```
+```npm install```
 
 ## Run the project on localhost:
 
