@@ -4,8 +4,8 @@
   "description": "Basic template for a new Foundation for Sites project.",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp",
-    "build": "gulp sass"
+    "start": "gulp && node server.js",
+    "build": "gulp build --production"
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
