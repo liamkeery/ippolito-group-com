@@ -31,6 +31,11 @@ function serve() {
   gulp.watch("*.html").on('change', browserSync.reload);
 }
 
+gulp.task('build',
+ gulp.series(sass));
+
+
 gulp.task('sass', sass);
 gulp.task('serve', gulp.series('sass', serve));
-gulp.task('default', gulp.series('sass', serve));
+//gulp.task('default', gulp.series('sass', serve));
+gulp.task('default', gulp.series('sass'));
