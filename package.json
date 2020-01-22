@@ -8,8 +8,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp sass",
-    "postinstall": "bower install && gulp sass"
+    "build": "gulp sass"
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
