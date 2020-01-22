@@ -247,7 +247,10 @@ a:hover{
     -webkit-box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
     -moz-box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
     box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
-    height: 400px;
+    height: 500px;
+    width: 350px;
+    margin: 0 auto;
+    padding: 0;
 
     h2 {
         font-family: $roboto;
@@ -265,6 +268,10 @@ a:hover{
         padding: 30px;
         margin: 0 auto;
     }
+}
+
+.segment {
+    margin-top: 40px;
 }
 
 // Companies
@@ -303,6 +310,30 @@ a:hover{
     }
 }
 
+// Footer
+
+footer {
+    background: $ippolito-purple;
+    height: 300px;
+
+    hr {
+        border: 2px solid $ippolito-gold;
+        width: 50%;
+    }
+
+    p {
+        color: white;
+        font-family: $roboto;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .menu {
+        width: 465px;
+        margin: 0 auto;
+    }
+}
 
 // Media Queries
 
@@ -319,6 +350,12 @@ a:hover{
     .middle-content-section {
         h1 {
             font-size: 2rem;
+        }
+    }
+
+    .media-object-section {
+        img {
+            border-radius: 15px;
         }
     }
 }
