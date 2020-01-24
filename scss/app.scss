@@ -183,6 +183,21 @@ a:hover{
     margin-bottom: 50px;
 }
 
+// Alert
+
+.callout {
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
+    box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
+    border-top: 10px solid #3D7DC4;
+    font-family: $roboto;
+}
+
+.alert-content {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
 // Products Section
 
 .products {
@@ -333,6 +348,20 @@ footer {
         border: 2px solid $ippolito-gold;
         width: 30%;
     }
+}
+
+#history {
+    justify-content: center;
+}
+
+.accordion-item {
+    font-size: 1rem;
+}
+
+.accordion
+
+.tabs-title {
+    font-family: $jomolhari;
 }
 
 
