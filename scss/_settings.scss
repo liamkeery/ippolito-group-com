@@ -247,17 +247,17 @@ $input-error-font-weight: $global-weight-bold;
 // 7. Accordion
 // ------------
 
-$accordion-background: $white;
+$accordion-background: $ippolito-purple;
 $accordion-plusminus: true;
 $accordion-plus-content: '\002B';
 $accordion-minus-content: '\2013';
-$accordion-title-font-size: rem-calc(12);
-$accordion-item-color: $primary-color;
-$accordion-item-background-hover: $light-gray;
+$accordion-title-font-size: 1rem;
+$accordion-item-color: $ippolito-purple;
+$accordion-item-background-hover: rgb(96, 46, 123);
 $accordion-item-padding: 1.25rem 1rem;
 $accordion-content-background: $white;
 $accordion-content-border: 1px solid $light-gray;
-$accordion-content-color: $body-font-color;
+$accordion-content-color: black;
 $accordion-content-padding: 1rem;
 
 // 8. Accordion Menu
@@ -344,7 +344,7 @@ $buttongroup-radius-on-each: true;
 
 $callout-background: $white;
 $callout-background-fade: 85%;
-$callout-border: 1px solid rgba($black, 0.25);
+$callout-border: none;
 $callout-margin: 0 0 1rem 0;
 $callout-sizes: (
   small: 0.5rem,
@@ -833,12 +833,12 @@ $table-stack-breakpoint: medium;
 // --------
 
 $tab-margin: 0;
-$tab-background: $white;
-$tab-color: $primary-color;
-$tab-background-active: $light-gray;
-$tab-active-color: $primary-color;
+$tab-background: $ippolito-purple;
+$tab-color: $white;
+$tab-background-active: rgb(96, 46, 123);
+$tab-active-color: white;
 $tab-item-font-size: rem-calc(12);
-$tab-item-background-hover: $white;
+$tab-item-background-hover: rgb(96, 46, 123);
 $tab-item-padding: 1.25rem 1.5rem;
 $tab-content-background: $white;
 $tab-content-border: $light-gray;
