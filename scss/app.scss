@@ -352,18 +352,32 @@ footer {
 
 #history {
     justify-content: center;
+
+    a {
+        font-family: $roboto;
+    }
+    
+    a:visited {
+        color: $ippolito-purple;
+        font-family: $roboto;
+    }
+
+    a:hover {
+        text-decoration: none;
+        font-family: $roboto;
+    }
 }
 
 .accordion-item {
     font-size: 1rem;
 }
 
-.accordion
-
 .tabs-title {
-    font-family: $jomolhari;
+    a {
+        color: $ippolito-purple;
+        font-family: $roboto;
+    }
 }
-
 
 // Media Queries
 
