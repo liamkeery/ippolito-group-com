@@ -10,11 +10,12 @@
   </head>
   <body>
     
-    <div class="grid-container full">
+    <div class="grid-container full" id="top" data-magellan-target="top">
 
       <div class="hero-full-screen">
 
         <div class="top-content-section">
+          
           <div class="title-bar" data-responsive-toggle="main-navigation" data-hide-for="medium">
             <div class="title-bar-left"><a class="menu-text logo">Ippolito Group</a></div>
                 <div class="title-bar-right"><button class="menu-icon" type="button" data-toggle="main-navigation"></button></div>
@@ -25,15 +26,22 @@
               <a class="menu-text logo hide-for-small-only">Ippolito Group</a>
             </div>
             <div class="top-bar-right">
-              <ul class="dropdown menu nav" data-dropdown-menu data-magellan>
-                
+              <ul class="dropdown menu nav" data-dropdown-menu data-magellan data-alignment="auto">
                 <li><a href="#">HOME</a></li>
                 <li>
                   <a href="#">ABOUT</a>
                   <ul class="menu vertical" data-magellan>
-                    <li><a href="#products-section">OUR PRODUCTS</a></li>
+                    <li><a href="#products-section">OUR SERVICES</a></li>
                     <li><a href="#customers">CUSTOMERS</a></li>
-                    <li><a href="#companies">COMPANIES</a></li>
+                    <li class="is-dropdown-submenu-parent">
+                      <a href="#companies">COMPANIES</a>
+                      <ul class="menu" data-magellan>
+                        <li><a href="#fruitproduce">IPPOLITO FRUIT &amp; PRODUCE</a></li>
+                        <li><a href="#international">IPPOLITO INTERNATIONAL</a></li>
+                        <li><a href="#produce">IPPOLITO PRODUCE</a></li>
+                        <li><a href="#transportation">IPPOLITO TRANSPORTATION</a></li>
+                      </ul>
+                    </li>
                     <li><a href="#history-section">HISTORY</a></li>
                   </ul>
                 </li>
@@ -41,13 +49,14 @@
                 <li><a href="#" class="careers">CAREERS</a></li>
               </ul>
             </div>
+          
           </div>
         </div>
 
         <div class="middle-content-section">
           <h1>The Ippolito Group of Companies</h1>
           <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra risus quis orci luctus gravida. Phasellus accumsan lacus sit amet ipsum euismod iaculis sed et justo.</p>
+          <p>With over 80 years of experience, we plant, pack, process and transport fresh produce supplying major retail, wholesale and foodservice customers across North America.</p>
         
           <div class="grid-x grid-padding-x" id="logos">
             <div class="large-12 cell">
@@ -65,7 +74,7 @@
       
       <div id="main-content-section" data-magellan-target="main-content-section">
 
-        <div class="grid-x grid-padding-x">
+        <div class="grid-x grid-padding-x hide">
         <div class="callout cell" data-closable>
           <div class="alert-content">
           <h5>Alert Title</h5>
@@ -77,10 +86,56 @@
       </div>
       </div>
 
-        <h1 class="heading" id="products-section" data-magellan-target="products-section">Our Products</h1>
+        <h1 class="heading" id="products-section" data-magellan-target="products-section">Our Services</h1>
         <div class="grid-x grid-padding-x" id="product-section">
-          <div class="large-6 cell products">
-            <div class="orbit" role="region" aria-label="Services" data-orbit data-auto-play="false">
+          <div class="large-8 cell products">
+
+            <ul class="accordion services" data-accordion data-allow-all-closed="true">
+              <li class="accordion-item is-active" data-accordion-item>
+
+                <a href="#" class="accordion-title"><i class="fas fa-seedling"></i>Growing</a>
+          
+                <div class="accordion-content" data-tab-content>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum animi iure quis sed, eveniet iusto, sunt perspiciatis rem laborum optio quaerat. Similique rem a, necessitatibus ipsam eius adipisci corrupti unde?</p>
+                </div>
+              </li>
+              <li class="accordion-item" data-accordion-item>
+
+                <a href="#" class="accordion-title"><i class="fas fa-box-open"></i>Packing</a>
+          
+                <div class="accordion-content" data-tab-content>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nisi nihil odit dolorum incidunt commodi, laborum similique ab totam neque accusamus. Quia, atque quae doloribus exercitationem repudiandae rem laborum doloremque.</p>
+                </div>
+              </li>
+              <li class="accordion-item" data-accordion-item>
+
+                <a href="#" class="accordion-title"><i class="fas fa-cogs"></i>Processing</a>
+          
+                <div class="accordion-content" data-tab-content>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga facilis reprehenderit aperiam voluptate accusamus animi, ea suscipit odio mollitia! Sequi amet voluptas quae officia magni eius quasi deleniti asperiores pariatur?</p>
+                </div>
+              </li>
+              <li class="accordion-item" data-accordion-item>
+
+                <a href="#" class="accordion-title"><i class="fas fa-shipping-fast"></i>Transportation &amp; Logistics</a>
+          
+                <div class="accordion-content" data-tab-content>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatibus vero quis non doloribus aliquid inventore quidem laborum eaque modi ipsam libero qui illum distinctio illo quasi, vel aut fuga!</p>
+                </div>
+              </li>
+              <li class="accordion-item" data-accordion-item>
+
+                <a href="#" class="accordion-title"><i class="fas fa-star"></i>Specialty Services</a>
+          
+                <div class="accordion-content" data-tab-content>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, dicta. Numquam voluptatum reiciendis dolore doloribus voluptas repellendus praesentium, perspiciatis, libero quibusdam exercitationem ea rerum? Nulla fugit ratione magnam sunt corporis.</p>
+                </div>
+              </li>
+            </ul>
+
+
+
+            <!-- <div class="orbit" role="region" aria-label="Services" data-orbit data-auto-play="false">
               <div class="orbit-controls">
                 <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span><i class="fas fa-chevron-left"></i></button>
                 <button class="orbit-next"><span class="show-for-sr">Next Slide</span><i class="fas fa-chevron-right"></i></button>
@@ -135,7 +190,7 @@
                 <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
                 <button data-slide="4"><span class="show-for-sr">Fifth slide details.</span></button>
               </nav>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -143,36 +198,36 @@
           <div class="grid-x grid-padding-x" id="customer-segments">
             <div class="cell large-3 medium-12 segment">
               <div class="card">
-              <img src="images/wholesale-icon.svg" alt="Wholesale">
-              <h2>Wholesale</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra risus quis orci luctus gravida. Phasellus accumsan lacus sit amet ipsum euismod iaculis sed et justo.</p>
-            </div>
-            </div>
-            <div class="cell large-3 medium-12 segment">
-              <div class="card">
               <img src="images/retail-icon.svg" alt="Retail" class="retail">
               <h2>Retail</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra risus quis orci luctus gravida. Phasellus accumsan lacus sit amet ipsum euismod iaculis sed et justo.</p>
+              <p>From retail ready packaging to merchandising support, we understand your business. With over 80 years behind us, Ippolito is an experienced partner and leader in developing custom produce programs to meet your needs.</p>
             </div>
           </div>
             <div class="cell large-3 medium-12 segment">
               <div class="card">
+              <img src="images/wholesale-icon.svg" alt="Wholesale">
+              <h2>Wholesale</h2>
+              <p>It is where we started – from buying on the open market to controlling our own fields, we have grown and changed with the times. Our commodity management program and value add services are the right choice for processors and wholesale markets alike.</p>
+            </div>
+            </div>
+            <div class="cell large-3 medium-12 segment">
+              <div class="card">
               <img src="images/foodservice-icon.svg" alt="Foodservice">
               <h2>Foodservice</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra risus quis orci luctus gravida. Phasellus accumsan lacus sit amet ipsum euismod iaculis sed et justo.</p>
+              <p>We understand that safety and quality are two of the most important factors facing our culinary partners. Combining our vertically integrated system, with our distributor partners the Ippolito Group prides itself on exceeding your expectations for freshness you can count on.</p>
             </div>
             </div>
           </div>
 
           <h1 class="heading" id="companies"  data-magellan-target="companies">Companies</h1>
           <div class="grid-x" id="company-section">
-            <div class="media-object stack-for-small large-8 cell company block">
+            <div class="media-object stack-for-small large-8 cell company block" id="fruitproduce" data-magellan-target="fruitproduce">
               <div class="media-object-section"> 
                   <img src= "images/webp/ippolito-fruit.webp" alt="Ippolito Fruit & Produce">
               </div>
               <div class="media-object-section">
                 <div class="content-wrapper">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra risus quis orci luctus gravida. Phasellus accumsan lacus sit amet ipsum euismod iaculis sed et justo.</p>
+                <p>With our roots going back to the 1930’s, we are a family owned produce company serving millions of families across North America through our retail, foodservice and wholesale partners. </p>
               <button class="button">Visit Website</button>
             </div>
               </div>
@@ -180,13 +235,13 @@
             </div>
 
             <div class="grid-x">
-              <div class="media-object stack-for-small large-8 cell company block">
+              <div class="media-object stack-for-small large-8 cell company block" id="international" data-magellan-target="international">
                 <div class="media-object-section"> 
-                    <img src= "images/webp/ippolito-trans.webp" alt="Ippolito Transportation">
+                    <img src= "images/webp/ippolito-int.webp" alt="Ippolito Transportation">
                 </div>
                 <div class="media-object-section">
                   <div class="content-wrapper">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra risus quis orci luctus gravida. Phasellus accumsan lacus sit amet ipsum euismod iaculis sed et justo.</p>
+                  <p>Established in 2000, Ippolito International is a second-generation farming company offering year-round supplies of premium vegetables. Our Queen Victoria and King Coast brand vegetables are the staple of every dinner table.</p>
                 <button class="button">Visit Website</button>
               </div>
                 </div>
@@ -194,13 +249,13 @@
             </div>
 
             <div class="grid-x">
-              <div class="media-object stack-for-small large-8 cell company block">
+              <div class="media-object stack-for-small large-8 cell company block" id="produce" data-magellan-target="produce">
                 <div class="media-object-section"> 
                     <img src= "images/webp/ippolito-produce.webp" alt="Ippolito Produce">
                 </div>
                 <div class="media-object-section">
                   <div class="content-wrapper">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra risus quis orci luctus gravida. Phasellus accumsan lacus sit amet ipsum euismod iaculis sed et justo.</p>
+                  <p>Since our first opening in 1998 we have been proudly serving customers at the Ontario Food Terminal. We have over 200 items available in a variety of formats from bulk to individually packaged on a daily basis.</p>
                 <button class="button">Visit Website</button>
               </div>
                 </div>
@@ -208,13 +263,13 @@
             </div>
 
             <div class="grid-x">
-              <div class="media-object stack-for-small large-8 cell company">
+              <div class="media-object stack-for-small large-8 cell company" id="transportation" data-magellan-target="transportation">
                 <div class="media-object-section"> 
-                    <img src= "images/webp/ippolito-int.webp" alt="Ippolito International">
+                    <img src="images/webp/ippolito-trans.webp" alt="Ippolito International">
                 </div>
                 <div class="media-object-section">
                   <div class="content-wrapper">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra risus quis orci luctus gravida. Phasellus accumsan lacus sit amet ipsum euismod iaculis sed et justo.</p>
+                  <p>We are a full-service logistics provider with lanes across North America. We pride ourselves on maintaining a modern fleet of tractor trailers all of which are fully equipped with satellite tracking to help ensure every customer receives on time service.</p>
                 <button class="button">Visit Website</button>
               </div>
                 </div>
@@ -254,158 +309,34 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                   </div>
                 </li>
-                <li class="accordion-item" data-accordion-item>
-                  <a href="#" class="accordion-title">1989</a>
-                  <div class="accordion-content" data-tab-content>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </li>
-                <li class="accordion-item" data-accordion-item>
-                  <a href="#" class="accordion-title">1996</a>
-                  <div class="accordion-content" data-tab-content>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </li>
-                <li class="accordion-item" data-accordion-item>
-                  <a href="#" class="accordion-title">1999</a>
-                  <div class="accordion-content" data-tab-content>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </li>
-                <li class="accordion-item" data-accordion-item>
-                  <a href="#" class="accordion-title">2000</a>
-                  <div class="accordion-content" data-tab-content>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </li>
-                <li class="accordion-item" data-accordion-item>
-                  <a href="#" class="accordion-title">2001</a>
-                  <div class="accordion-content" data-tab-content>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </li>
-                <li class="accordion-item" data-accordion-item>
-                  <a href="#" class="accordion-title">2004</a>
-                  <div class="accordion-content" data-tab-content>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </li>
-                <li class="accordion-item" data-accordion-item>
-                  <a href="#" class="accordion-title">2013</a>
-                  <div class="accordion-content" data-tab-content>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </li>
-                <li class="accordion-item" data-accordion-item>
-                  <a href="#" class="accordion-title">2014</a>
-                  <div class="accordion-content" data-tab-content>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </li>
-                <li class="accordion-item" data-accordion-item>
-                  <a href="#" class="accordion-title">2015</a>
-                  <div class="accordion-content" data-tab-content>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </li>
-                <li class="accordion-item" data-accordion-item>
-                  <a href="#" class="accordion-title">2016</a>
-                  <div class="accordion-content" data-tab-content>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </li>
-                <li class="accordion-item" data-accordion-item>
-                  <a href="#" class="accordion-title">2017</a>
-                  <div class="accordion-content" data-tab-content>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </li>
-                <li class="accordion-item" data-accordion-item>
-                  <a href="#" class="accordion-title">2018</a>
-                  <div class="accordion-content" data-tab-content>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </li>
               </ul>
             </div>
 
-            <div class="grid-x grid-padding-x hide-for-small-only">
-              <div class="cell">
+            <div class="grid-x grid-padding-x hide-for-small-only" id="tabs">
+              <div class="large-6 medium-12 cell history-container">
                 <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
                   <li class="tabs-title is-active"><a href="#panel1c">1930s</a></li>
                   <li class="tabs-title"><a href="#panel2c">1946</a></li>
                   <li class="tabs-title"><a href="#panel3c">1956</a></li>
                   <li class="tabs-title"><a href="#panel4c">1959</a></li>
                   <li class="tabs-title"><a href="#panel5c">1964</a></li>
-                  <li class="tabs-title"><a href="#panel6c">1989</a></li>
-                  <li class="tabs-title"><a href="#panel7c">1996</a></li>
-                  <li class="tabs-title"><a href="#panel8c">1998</a></li>
-                  <li class="tabs-title"><a href="#panel9c">1999</a></li>
-                  <li class="tabs-title"><a href="#panel10c">2000</a></li>
-                  <li class="tabs-title"><a href="#panel11c">2001</a></li>
-                  <li class="tabs-title"><a href="#panel12c">2004</a></li>
-                  <li class="tabs-title"><a href="#panel13c">2013</a></li>
-                  <li class="tabs-title"><a href="#panel14c">2014</a></li>
-                  <li class="tabs-title"><a href="#panel15c">2015</a></li>
-                  <li class="tabs-title"><a href="#panel16c">2016</a></li>
-                  <li class="tabs-title"><a href="#panel17c">2017</a></li>
-                  <li class="tabs-title"><a href="#panel18c">2018</a></li>
                 </ul>
             
                 <div class="tabs-content" data-tabs-content="collapsing-tabs">
                   <div class="tabs-panel is-active" id="panel1c">
-                    <p>Panel 1</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque minima itaque officia non tempore magnam eveniet rerum ea quos? Corrupti illo ullam tenetur aliquam ducimus iste voluptatem consequuntur minima molestiae!</p>
                   </div>
                   <div class="tabs-panel" id="panel2c">
-                    <p>Panel 2</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, nulla cum consectetur quasi eos magni deserunt dicta error fugiat rerum odio ducimus, alias repellendus quis. Sunt voluptatem aspernatur aliquid expedita.</p>
                   </div>
                   <div class="tabs-panel" id="panel3c">
-                    <p>Panel 3</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laboriosam dolorem officiis libero quis? Explicabo eligendi veniam corporis quia, aut sit, nesciunt dolorem, rerum magnam libero distinctio reprehenderit. Ullam, necessitatibus?</p>
                   </div>
                   <div class="tabs-panel" id="panel4c">
-                    <p>Panel 4</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus vel quasi eveniet dicta, officia repellendus ullam perspiciatis voluptatum delectus sapiente deleniti corporis! Ex enim nesciunt rerum, distinctio reiciendis repellat ipsa.</p>
                   </div>
                   <div class="tabs-panel" id="panel5c">
-                    <p>Panel 5</p>
-                  </div>
-                  <div class="tabs-panel" id="panel6c">
-                    <p>Panel 6</p>
-                  </div>
-                  <div class="tabs-panel" id="panel7c">
-                    <p>Panel 7</p>
-                  </div>
-                  <div class="tabs-panel" id="panel8c">
-                    <p>Panel 8</p>
-                  </div>
-                  <div class="tabs-panel" id="panel9c">
-                    <p>Panel 9</p>
-                  </div>
-                  <div class="tabs-panel" id="panel10c">
-                    <p>Panel 10</p>
-                  </div>
-                  <div class="tabs-panel" id="panel11c">
-                    <p>Panel 11</p>
-                  </div>
-                  <div class="tabs-panel" id="panel12c">
-                    <p>Panel 12</p>
-                  </div>
-                  <div class="tabs-panel" id="panel13c">
-                    <p>Panel 13</p>
-                  </div>
-                  <div class="tabs-panel" id="panel14c">
-                    <p>Panel 14</p>
-                  </div>
-                  <div class="tabs-panel" id="panel15c">
-                    <p>Panel 15</p>
-                  </div>
-                  <div class="tabs-panel" id="panel16c">
-                    <p>Panel 16</p>
-                  </div>
-                  <div class="tabs-panel" id="panel17c">
-                    <p>Panel 17</p>
-                  </div>
-                  <div class="tabs-panel" id="panel18c">
-                    <p>Panel 18</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi inventore porro reprehenderit esse quis exercitationem, repellat itaque cupiditate laboriosam suscipit quae iure neque iusto quibusdam similique corporis eaque magni sit?</p>
                   </div>
                 </div>
               </div>
@@ -416,13 +347,16 @@
                 <footer>
                   <p>Copyright &copy; 2020 Ippolito Group of Companies</p>
                   <hr>
-                  <ul class="menu">
+                  <ul class="menu" data-magellan>
                     <li><a href="#">Careers</a></li>
+                    <li><a href="#top">Back To Top <i class="fas fa-angle-up"></i></a></li>
                     <li><a href="#">Contact</a></li>
-                    <li><a href="https://www.linkedin.com/company/ippolitogroup">LinkedIn</a></li>
-                    <li><a href="https://www.instagram.com/theippolitogroup/">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/IppolitoGroup">Facebook</a></li>
-                    <li><a href="https://twitter.com/IppolitoGroup">Twitter</a></li>
+                  </ul>
+                  <ul class="menu icons">
+                    <li><a href="https://www.linkedin.com/company/ippolitogroup"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.instagram.com/theippolitogroup/"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/IppolitoGroup"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/IppolitoGroup"><i class="fab fa-twitter"></i></a></li>
                   </ul>
                 </footer>
               </div>

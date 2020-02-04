@@ -109,6 +109,10 @@ a:hover{
 .top-bar {
     background: $ippolito-purple;
     height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 
     ul {
         background: $ippolito-purple;
@@ -142,6 +146,7 @@ a:hover{
   .middle-content-section {
     text-align: center;
     color: $white;
+    margin-top: 50px;
 
     h1 {
         font-family: $jomolhari;
@@ -154,7 +159,7 @@ a:hover{
 
     p {
         font-family: $roboto;
-        font-size: 1.2rem;
+        font-size: 20px;
         max-width: 700px;
         padding-left: 20px;
         padding-right: 20px;
@@ -186,11 +191,12 @@ a:hover{
 // Alert
 
 .callout {
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
-    box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
+    // -webkit-box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
+    // -moz-box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
+    // box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
     border-top: 10px solid #3D7DC4;
     font-family: $roboto;
+
 }
 
 .alert-content {
@@ -256,12 +262,35 @@ a:hover{
     cursor: pointer;
 }
 
+.services {
+    .accordion-item {
+        font-size: 20px;
+        font-family: $roboto;
+    }
+
+    .accordion-title {
+        color: $ippolito-purple;
+        text-transform: uppercase;
+        font-family: $roboto;
+        font-size: 22px;
+    }
+    
+    .accordion-item:hover {
+        background: $light-gray;
+    }
+
+    i {
+        margin-right: 14px;
+    }
+}
+
 // Customer Segments
 
 .card {
     -webkit-box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
     -moz-box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
     box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
+    height: 550px;
 
     h2 {
         font-family: $roboto;
@@ -281,6 +310,8 @@ a:hover{
         padding-right: 30px;
         padding-bottom: 50px;
         margin: 0 auto;
+        font-size: 18px;
+        font-family: $roboto;
     }
 }
 
@@ -310,6 +341,11 @@ a:hover{
         padding: 0;
         margin: 0;
         float: left;
+    }
+
+    p {
+        font-size: 20px;
+        font-family: $roboto;
     }
 }
 
@@ -345,6 +381,17 @@ footer {
         //width: 480px;
     }
 
+    .icons {
+        color: white;
+        font-size: 1.5rem;
+        margin-top: 20px;
+
+        li a {
+            text-decoration: none;
+        }
+    }
+    
+
     hr {
         border: 2px solid $ippolito-gold;
         width: 30%;
@@ -372,14 +419,38 @@ footer {
 }
 
 .accordion-item {
-    font-size: 1rem;
+    font-size: 20px;
+}
+
+.accordion-item:hover {
+    background: $light-gray;
 }
 
 .tabs-title {
     a {
         color: $ippolito-purple;
         font-family: $roboto;
+        font-size: 20px;
     }
+
+    a:hover {
+        text-decoration: none;
+        color: $ippolito-purple;
+    }
+}
+
+#tabs {
+    justify-content: center;
+}
+
+.history-container {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
+    box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
 }
 
 // Media Queries
@@ -387,6 +458,8 @@ footer {
 @media screen and (max-width: 39.9375em) {
     .top-bar {
         height: 70px;
+        background: $ippolito-purple;
+        position: unset;
     }
 
     .nav {
@@ -433,5 +506,25 @@ footer {
         hr {
             width: 70%;
         }
+    }
+
+    .top-content-section {
+        margin: 0;
+    }
+
+    .card {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .card {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1368px) {
+    .card {
+        height: auto;
     }
 }
