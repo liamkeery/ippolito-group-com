@@ -84,19 +84,23 @@ body {
 
 .menu {
     font-family: $roboto;
+    cursor: pointer;
 }
 
 a {
     color: white;
+    cursor: pointer;
 }
 
 a:visited {
     color: white;
+    cursor: pointer;
 }
 
 a:hover{
     text-decoration: underline;
     color: white;
+    cursor: pointer;
 }
 
 .careers {
@@ -153,7 +157,7 @@ a:hover{
     }
 
     hr {
-        border: 2px solid $ippolito-purple;
+        border: 1.5px solid $ippolito-purple;
         width: 50%;
     }
 
@@ -168,6 +172,30 @@ a:hover{
         margin: 0 auto;
     }
   }
+
+  .our-brands {
+      font-family: $roboto;
+      font-size: 24px;
+      color: white;
+      text-transform: uppercase;
+  }
+
+  .separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border: 1.5px solid $ippolito-purple;
+}
+.separator::before {
+    margin-right: 1em;
+}
+.separator::after {
+    margin-left: 1em;
+}
 
   .top-content-section {
     width: 100%;
@@ -282,6 +310,15 @@ a:hover{
     i {
         margin-right: 14px;
     }
+}
+
+.tabs-title {
+	float: none !important;
+	display:inline-block;
+}
+
+.tabs {
+	text-align:center;
 }
 
 // Customer Segments
@@ -441,6 +478,10 @@ footer {
 
 #tabs {
     justify-content: center;
+}
+
+i {
+    margin-right: 14px;
 }
 
 .history-container {

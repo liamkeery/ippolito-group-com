@@ -17,7 +17,7 @@
         <div class="top-content-section">
           
           <div class="title-bar" data-responsive-toggle="main-navigation" data-hide-for="medium">
-            <div class="title-bar-left"><a class="menu-text logo">Ippolito Group</a></div>
+            <div class="title-bar-left"><a class="menu-text logo" href="#">Ippolito Group</a></div>
                 <div class="title-bar-right"><button class="menu-icon" type="button" data-toggle="main-navigation"></button></div>
           </div>
           
@@ -55,12 +55,13 @@
 
         <div class="middle-content-section">
           <h1>The Ippolito Group of Companies</h1>
-          <hr>
+          <!-- <hr> -->
           <p>With over 80 years of experience, we plant, pack, process and transport fresh produce supplying major retail, wholesale and foodservice customers across North America.</p>
         
           <div class="grid-x grid-padding-x" id="logos">
             <div class="large-12 cell">
-              <img src="images/webp/logos.webp" alt="The Ippolito Group of Companies" class="hide-for-small-only">
+              <h3 class="our-brands separator hide-for-small-only">Our Brands</h3>
+              <img src="images/logos.svg" alt="The Ippolito Group of Companies" class="hide-for-small-only">
             </div>
           </div>
 
@@ -87,7 +88,37 @@
       </div>
 
         <h1 class="heading" id="products-section" data-magellan-target="products-section">Our Services</h1>
-        <div class="grid-x grid-padding-x" id="product-section">
+        <div class="grid-x grid-padding-x hide-for-small-only" id="tabs">
+          <div class="large-10 medium-12 cell products">
+            <ul class="tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
+              <li class="tabs-title is-active"><a href="#panel1p"><i class="fas fa-seedling"></i>Growing</a></li>
+              <li class="tabs-title"><a href="#panel2p"><i class="fas fa-box-open"></i>Packing</a></li>
+              <li class="tabs-title"><a href="#panel3p"><i class="fas fa-cogs"></i>Processing</a></li>
+              <li class="tabs-title"><a href="#panel4p"><i class="fas fa-shipping-fast"></i>Transportation &amp; Logistics</a></li>
+              <li class="tabs-title"><a href="#panel5p"><i class="fas fa-star"></i>Specialty Services</a></li>
+            </ul>
+        
+            <div class="tabs-content" data-tabs-content="collapsing-tabs">
+              <div class="tabs-panel is-active" id="panel1p">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque minima itaque officia non tempore magnam eveniet rerum ea quos? Corrupti illo ullam tenetur aliquam ducimus iste voluptatem consequuntur minima molestiae!</p>
+              </div>
+              <div class="tabs-panel" id="panel2p">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, nulla cum consectetur quasi eos magni deserunt dicta error fugiat rerum odio ducimus, alias repellendus quis. Sunt voluptatem aspernatur aliquid expedita.</p>
+              </div>
+              <div class="tabs-panel" id="panel3p">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est laboriosam dolorem officiis libero quis? Explicabo eligendi veniam corporis quia, aut sit, nesciunt dolorem, rerum magnam libero distinctio reprehenderit. Ullam, necessitatibus?</p>
+              </div>
+              <div class="tabs-panel" id="panel4p">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus vel quasi eveniet dicta, officia repellendus ullam perspiciatis voluptatum delectus sapiente deleniti corporis! Ex enim nesciunt rerum, distinctio reiciendis repellat ipsa.</p>
+              </div>
+              <div class="tabs-panel" id="panel5p">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi inventore porro reprehenderit esse quis exercitationem, repellat itaque cupiditate laboriosam suscipit quae iure neque iusto quibusdam similique corporis eaque magni sit?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="grid-x grid-padding-x show-for-small-only">
           <div class="large-8 cell products">
 
             <ul class="accordion services" data-accordion data-allow-all-closed="true">
@@ -203,18 +234,18 @@
               <p>From retail ready packaging to merchandising support, we understand your business. With over 80 years behind us, Ippolito is an experienced partner and leader in developing custom produce programs to meet your needs.</p>
             </div>
           </div>
+          <div class="cell large-3 medium-12 segment">
+            <div class="card">
+            <img src="images/foodservice-icon.svg" alt="Foodservice">
+            <h2>Foodservice</h2>
+            <p>We understand that safety and quality are two of the most important factors facing our culinary partners. Combining our vertically integrated system, with our distributor partners the Ippolito Group prides itself on exceeding your expectations for freshness you can count on.</p>
+          </div>
+          </div>
             <div class="cell large-3 medium-12 segment">
               <div class="card">
               <img src="images/wholesale-icon.svg" alt="Wholesale">
               <h2>Wholesale</h2>
               <p>It is where we started – from buying on the open market to controlling our own fields, we have grown and changed with the times. Our commodity management program and value add services are the right choice for processors and wholesale markets alike.</p>
-            </div>
-            </div>
-            <div class="cell large-3 medium-12 segment">
-              <div class="card">
-              <img src="images/foodservice-icon.svg" alt="Foodservice">
-              <h2>Foodservice</h2>
-              <p>We understand that safety and quality are two of the most important factors facing our culinary partners. Combining our vertically integrated system, with our distributor partners the Ippolito Group prides itself on exceeding your expectations for freshness you can count on.</p>
             </div>
             </div>
           </div>
