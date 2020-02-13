@@ -144,7 +144,7 @@ a:hover{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background: url('../images/webp/bg.webp') center center no-repeat;;
+  background: url('../images/bg.jpg') center center no-repeat;
   background-size: cover;
 
   .middle-content-section {
@@ -154,17 +154,18 @@ a:hover{
 
     h1 {
         font-family: $jomolhari;
+        margin-top: 30px;
     }
 
     hr {
-        border: 1.5px solid $ippolito-purple;
+        border: 1.5px solid $white;
         width: 50%;
     }
 
     p {
         font-family: $roboto;
         font-size: 20px;
-        max-width: 700px;
+        max-width: 800px;
         padding-left: 20px;
         padding-right: 20px;
         padding-top: 20px;
@@ -188,7 +189,7 @@ a:hover{
 .separator::before, .separator::after {
     content: '';
     flex: 1;
-    border: 1.5px solid $ippolito-purple;
+    border: 1.5px solid $white;
 }
 .separator::before {
     margin-right: 1em;
@@ -314,7 +315,12 @@ a:hover{
 
 .tabs-title {
 	float: none !important;
-	display:inline-block;
+    display:inline-block;
+
+    a {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .tabs {
@@ -327,7 +333,7 @@ a:hover{
     -webkit-box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
     -moz-box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
     box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
-    height: 550px;
+    height: 730px;
 
     h2 {
         font-family: $roboto;
@@ -391,11 +397,17 @@ a:hover{
 }
 
 .content-wrapper {
-    margin-top: 80px;
-
     p {
         padding: 20px;
     }
+}
+
+.short {
+    margin-top: 80px;
+}
+
+.last {
+    padding-bottom: 0;
 }
 
 // Footer styles
