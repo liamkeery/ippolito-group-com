@@ -37,5 +37,5 @@ gulp.task('build',
 
 gulp.task('sass', sass);
 gulp.task('serve', gulp.series('sass', serve));
-gulp.task('default', gulp.series('sass', serve));
-//gulp.task('default', gulp.series('sass'));
+//gulp.task('default', gulp.series('sass', serve));
+gulp.task('default', gulp.series('sass'));
