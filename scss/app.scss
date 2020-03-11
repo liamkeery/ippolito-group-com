@@ -5,6 +5,7 @@
 @import 'motion-ui';
 @import 'careers';
 @import 'contact';
+@import 'admin';
 
 // Global styles
 @include foundation-global-styles;
@@ -166,7 +167,7 @@ a:hover{
 
     p {
         font-family: $roboto;
-        font-size: 20px;
+        font-size: 1.125rem;
         max-width: 800px;
         padding-left: 20px;
         padding-right: 20px;
@@ -264,38 +265,9 @@ a:hover{
     margin: 0 auto;
 }
 
-.slide-heading {
-    color: $ippolito-purple;
-    font-family: $roboto;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.slide-desc {
-    width: 500px;
-    color: black;
-    font-family: $roboto;
-    margin: 0 auto;
-    padding-top: 10px;
-    padding-bottom: 30px;
-}
-
-.orbit-previous {
-    color: $ippolito-purple;
-    font-size: 2.5rem;
-    cursor: pointer;
-}
-
-.orbit-next {
-    color: $ippolito-purple;
-    font-size: 2.5rem;
-    cursor: pointer;
-}
-
 .services {
     .accordion-item {
-        font-size: 20px;
+        font-size: 1.125rem;
         font-family: $roboto;
     }
 
@@ -303,7 +275,7 @@ a:hover{
         color: $ippolito-purple;
         text-transform: uppercase;
         font-family: $roboto;
-        font-size: 22px;
+        font-size: 1.125rem;
     }
     
     .accordion-item:hover {
@@ -313,11 +285,16 @@ a:hover{
     i {
         margin-right: 14px;
     }
+
+    p {
+        text-align: left;
+        font-size: 1.125rem;
+    }
 }
 
 .tabs-title {
 	float: none !important;
-    display:inline-block;
+    display: inline-block;
 
     a {
         padding-left: 15px;
@@ -326,7 +303,21 @@ a:hover{
 }
 
 .tabs {
-	text-align:center;
+    text-align:center;
+    background: $ippolito-purple;
+}
+
+.tabs-title>a:focus, .tabs-title>a[aria-selected='true'] {
+    background: transparent;
+    color: white;
+    text-decoration: underline;
+}
+
+#top-tabs {
+    p {
+        text-align: left;
+        font-size: 1.125rem;
+    }
 }
 
 // Customer Segments
@@ -335,7 +326,7 @@ a:hover{
     -webkit-box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
     -moz-box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
     box-shadow: 0px 0px 20px 0px rgba(208,208,208,1);
-    height: 700px;
+    height: 550px;
 
     h2 {
         font-family: $roboto;
@@ -356,7 +347,8 @@ a:hover{
         padding-right: 30px;
         padding-bottom: 50px;
         margin: 0 auto;
-        font-size: 18px;
+        text-align: left;
+        font-size: 1.125rem;
         font-family: $roboto;
     }
 }
@@ -380,7 +372,13 @@ a:hover{
     .button {
         margin: 0 auto;
         display: block;
-        border-radius: 15px;
+        padding: 15px;
+        width: 200px;
+        font-size: 1.125rem;
+    }
+
+    .button:hover {
+        background: rgb(105, 67, 129);
     }
 
     img {
@@ -390,10 +388,25 @@ a:hover{
     }
 
     p {
-        font-size: 20px;
+        font-size: 1.125rem;
         font-family: $roboto;
+        margin-top: 40px;
+        text-align: left;
+        overflow: hidden;
+    }
+
+    .media-object-section {
+        height: 456px;
+        width: 456px;
+        overflow: hidden;
+        img {
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
     }
 }
+
+
 
 .block {
     margin-bottom: 50px;
@@ -471,7 +484,7 @@ footer {
 }
 
 .accordion-item {
-    font-size: 20px;
+    font-size: 1.125rem;
 }
 
 .accordion-item:hover {
@@ -480,15 +493,17 @@ footer {
 
 .tabs-title {
     a {
-        color: $ippolito-purple;
+        color: white;
         font-family: $roboto;
-        font-size: 20px;
+        font-size: 1.125rem;
     }
 
     a:hover {
-        text-decoration: none;
-        color: $ippolito-purple;
+        text-decoration: underline;
+        color: white;
+        background: transparent;
     }
+
 }
 
 #tabs {
@@ -512,17 +527,56 @@ i {
 .date {
     font-family: $jomolhari;
     color: $ippolito-purple;
-    font-size: 1.2rem;
+    font-size: 2rem;
+}
+
+.tabs-panel {
+    text-align: center;
 }
 
 // Media Queries
+
+// iPhone 5
+@media screen and (max-width: 320px) {
+    .top-bar ul {
+        width: 290px !important;
+        justify-content: center !important;
+        font-size: 0.6rem;
+    }
+
+    .is-dropdown-submenu {
+        max-width: 200px;
+    }
+
+    .middle-content-section {
+       height: auto;
+        h1 {
+            font-size: 1.5rem !important;
+        }
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    footer {
+        .small {
+            font-size: 0.8rem;
+        }
+    }
+}
 
 @media screen and (max-width: 39.9375em) {
     .top-bar {
         height: 70px;
         background: $ippolito-purple;
         position: unset;
-        font-size: 1rem;
+        font-size: 0.8rem;
+
+        ul {
+            width: 350px;
+            justify-content: center;
+        }
     }
 
     .nav {
@@ -547,6 +601,7 @@ i {
 
         p {
             padding-top: 0;
+            margin-top: 0;
         }
     }
 
@@ -556,7 +611,7 @@ i {
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     #customer-segments {
@@ -599,13 +654,16 @@ i {
 
             p {
                 padding-bottom: 0;
+                font-size: 1rem;
             }
         }
 
         .bottom-content-section {
+            padding-bottom: 20px;
+
             svg {
-                width: 3rem;
-                height: 3rem;
+                width: 2rem;
+                height: 2rem;
             }
         }  
     }
@@ -614,6 +672,21 @@ i {
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
     .card {
         height: auto;
+    }
+
+    #transportation {
+        p {
+            margin-top: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #transportation {
+        p {
+            margin-top: 0;
+            font-size: 17px;
+        }
     }
 }
 
