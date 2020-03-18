@@ -67,6 +67,11 @@ h1 {
     text-align: center;
 }
 
+.login-heading {
+    margin-top: 80px;
+    margin-bottom: 25px;
+}
+
 h4 {
     text-align: center;
 }
@@ -83,4 +88,24 @@ nav {
     margin: 0 auto;
     justify-content: center;
     margin-top: 20px;
+}
+
+#username {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#password {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.error {
+    margin-bottom: 20px;
+    color: #cc4b37;
+}
+
+.button {
+    margin: 0 auto;
+    display: block;
 }
