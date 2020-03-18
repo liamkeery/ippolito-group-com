@@ -73,6 +73,7 @@
         text-align: center;
         font-family: $jomolhari;
         margin-top: 50px;
+        margin-bottom: 50px;
     }
     
     h3 {
@@ -95,4 +96,24 @@ label {
 
 .area {
     margin-bottom: 40px;
+}
+
+.contact-heading {
+    font-family: $jomolhari;
+    color: $ippolito-purple;
+}
+
+.contact-info {
+    p {
+        font-family: $roboto;
+    }
+
+    a {
+        color: $black;
+    }
+
+    a:hover {
+        color: $black;
+        text-decoration: underline;
+    }
 }
