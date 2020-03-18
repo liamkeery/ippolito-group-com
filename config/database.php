@@ -6,9 +6,9 @@ class Database
 
     private $db_name = "heroku_fd28e1fd31eae28";
 
-    //private $username = '';
+    private $username = '';
 
-    //private $password = '';
+    private $password = '';
 
     private static $instance = null;
     public $conn;
@@ -17,15 +17,13 @@ class Database
         $db_dsn = array(
             'host'    => $this->host,
             'dbname'  => $this->db_name,
-            'username'=> $this->conn = getenv('DB_USER'),
-            'password'=> $this->conn = getenv('DB_PASS'),
             'charset' => 'utf8',
         );
 
-        if (getenv('IDP_ENVIRONMENT') === 'docker') {
-            $db_dsn['host'] = 'mysql';
-            $this->username = 'docker_u';
-            $this->password = 'docker_p';
+        if (getenv('IDP_ENVIRONMENT') === 'heroku') {
+            $db_dsn['host'] = 'us-cdbr-iron-east-04.cleardb.net';
+            $this->username = getenv('DB_USER');
+            $this->password = getenv('DB_PASSWORD');
         }
 
         try {
