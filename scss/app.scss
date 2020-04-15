@@ -147,12 +147,12 @@ a:hover{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background: url('../images/bg.jpg') center center no-repeat;
+  background: url('../images/bg.jpg') center top no-repeat;
   background-size: cover;
 
   .middle-content-section {
     text-align: center;
-    color: $white;
+    color: white;
     margin-top: 50px;
 
     h1 {
@@ -175,6 +175,12 @@ a:hover{
         padding-bottom: 30px;
         margin: 0 auto;
     }
+
+    .color-helper {
+        background: $ippolito-purple;
+        padding: 16px;
+        opacity: 0.9;
+    }
   }
 
   .our-brands {
@@ -192,7 +198,7 @@ a:hover{
 .separator::before, .separator::after {
     content: '';
     flex: 1;
-    border: 1.5px solid $white;
+    border: 1.5px solid white;
 }
 .separator::before {
     margin-right: 1em;
@@ -602,6 +608,14 @@ i {
             padding-top: 0;
             margin-top: 0;
         }
+
+        .media-object-section {
+            height: auto;
+        }
+    }
+
+    .short {
+        margin-top: 0;
     }
 
     .media-object-section {
@@ -665,6 +679,17 @@ i {
                 height: 2rem;
             }
         }  
+    }
+}
+
+#logos-small {
+    img {
+        margin-bottom: 24px;
+    }
+
+    hr {
+        border: 2px solid $ippolito-purple;
+        width: 50%;
     }
 }
 
