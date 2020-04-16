@@ -126,6 +126,20 @@ a:hover{
     }
 }
 
+.drilldown {
+    a {
+        background: $ippolito-purple;
+    }
+
+    a:hover {
+        background: rgb(84, 53, 101);
+    }
+
+    .js-drilldown-back {
+        color: white;
+    }
+}
+
 .top-bar-right {
     margin-right: 25px;
 }
