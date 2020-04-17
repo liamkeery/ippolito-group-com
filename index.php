@@ -21,8 +21,33 @@
             <div class="title-bar-left"><a class="menu-text logo" href="index.php">Ippolito Group</a></div>
                 <div class="title-bar-right"><button class="menu-icon" type="button" data-toggle="main-navigation"></button></div>
           </div>
+
+          <div id="main-navigation">
+            <ul class="vertical menu drilldown show-for-small-only" data-drilldown data-auto-height="true" data-animate-height="true" data-magellan>
+              <li><a href="#">HOME</a></li>
+              <li>
+                <a href="#">ABOUT</a>
+                <ul class="menu vertical nested">
+                  <li><a href="#products-section">WHAT WE DO</a></li>
+                  <li><a href="#customers">WHO WE SERVE</a></li>
+                  <li>
+                    <a href="#companies">OUR COMPANIES</a>
+                    <ul class="menu vertical nested" data-magellan>
+                      <li><a href="#fruitproduce">IPPOLITO FRUIT &amp; PRODUCE</a></li>
+                      <li><a href="#international">IPPOLITO INTERNATIONAL</a></li>
+                      <li><a href="#produce">IPPOLITO PRODUCE</a></li>
+                      <li><a href="#transportation">IPPOLITO TRANSPORTATION</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#history-section">OUR HISTORY</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+              <li><a href="careers.php">CAREERS</a></li>
+            </ul>
+          </div>
           
-          <div class="top-bar" id="main-navigation">
+          <div class="top-bar hide-for-small-only">
             <div class="top-bar-left">
               <a class="menu-text logo hide-for-small-only" href="index.php">Ippolito Group</a>
             </div>
@@ -57,7 +82,10 @@
         <div class="middle-content-section">
           <h1>The Ippolito Group of Companies</h1>
           <hr class="show-for-small-only">
+          <p class="hide-for-small-only">From the humble roots of a fruit and vegetable stand established over 80 years ago, to today’s family of vertically integrated companies,  the Ippolito Group grows, packs, processes and transports millions of pounds of produce across North America in the pursuit of making healthy eating easy.</p>
+          <div class="color-helper show-for-small-only">
           <p>From the humble roots of a fruit and vegetable stand established over 80 years ago, to today’s family of vertically integrated companies,  the Ippolito Group grows, packs, processes and transports millions of pounds of produce across North America in the pursuit of making healthy eating easy.</p>
+          </div>
         
           <div class="grid-x grid-padding-x" id="logos">
             <div class="large-12 cell">
@@ -86,6 +114,30 @@
           </button>
         </div>
       </div>
+      </div>
+
+      <h1 class="heading show-for-small-only" style="margin-bottom: 0;">Our Brands</h1>
+      <div class="grid-x grid-padding-x show-for-small-only" id="logos-small">
+        <hr class="logos-divide">
+        <div class="small-12 col text-center">
+          <img src="images/logos/queen-vic.svg" alt="Queen Victoria Produce Logo">
+        </div>
+        <div class="small-12 col text-center">
+          <img src="images/logos/queen_vic_organic.svg" alt="Queen Victoria Produce Organic Logo">
+        </div>
+        <div class="small-12 col text-center">
+          <img src="images/logos/queen-vic-original.svg" alt="Queen Victoria Produce Original Logo">
+        </div>
+        <div class="small-12 col text-center">
+          <img src="images/logos/lovin-life.svg" alt="Lovin' Life">
+        </div>
+        <div class="small-12 col text-center">
+          <img src="images/logos/frisco.svg" alt="Frisco's">
+        </div>
+        <div class="small-12 col text-center">
+          <img src='images/logos/ippolito-trans.svg' alt="Ippolito Transportation" style="margin-bottom: 0;">
+        </div>
+        <hr class="logos-divide">
       </div>
 
         <h1 class="heading" id="products-section" data-magellan-target="products-section">What We Do</h1>
