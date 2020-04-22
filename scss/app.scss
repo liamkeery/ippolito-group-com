@@ -336,8 +336,13 @@ a:hover{
 #top-tabs {
     p {
         text-align: left;
+        font-family: $roboto;
         font-size: 1.125rem;
     }
+}
+
+.tabs-panel {
+    font-family: $roboto;
 }
 
 // Customer Segments
@@ -489,6 +494,7 @@ footer {
 
     a {
         font-family: $roboto;
+        color: $ippolito-purple;
     }
     
     a:visited {
