@@ -11,16 +11,39 @@
 <body>
     <div class="grid-container full" id="top" data-magellan-target="top">
 
-        <div class="hero-full-screen">
-
-            <div class="top-content-section">
+        
               
               <div class="title-bar" data-responsive-toggle="main-navigation" data-hide-for="medium">
                 <div class="title-bar-left"><a class="menu-text logo" href="index.php">Ippolito Group</a></div>
                     <div class="title-bar-right"><button class="menu-icon" type="button" data-toggle="main-navigation"></button></div>
               </div>
+
+              <div id="main-navigation">
+                <ul class="vertical menu drilldown show-for-small-only" data-drilldown data-auto-height="true" data-animate-height="true" data-magellan>
+                  <li><a href="index.php">HOME</a></li>
+                  <li>
+                    <a href="#">ABOUT</a>
+                    <ul class="menu vertical nested" data-magellan>
+                      <li><a href="index.php#products-section">WHAT WE DO</a></li>
+                      <li><a href="index.php#customers">WHO WE SERVE</a></li>
+                      <li>
+                        <a href="index.php#companies">OUR COMPANIES</a>
+                        <ul class="menu vertical nested" data-magellan>
+                          <li><a href="index.php#fruitproduce">IPPOLITO FRUIT &amp; PRODUCE</a></li>
+                          <li><a href="index.php#international">IPPOLITO INTERNATIONAL</a></li>
+                          <li><a href="index.php#produce">IPPOLITO PRODUCE</a></li>
+                          <li><a href="index.php#transportation">IPPOLITO TRANSPORTATION</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="index.php#history-section">OUR HISTORY</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+                  <li><a href="careers.php">CAREERS</a></li>
+                </ul>
+              </div>
               
-              <div class="top-bar" id="main-navigation">
+              <div class="top-bar hide-for-small-only">
                 <div class="top-bar-left">
                   <a class="menu-text logo hide-for-small-only" href="index.php">Ippolito Group</a>
                 </div>
@@ -30,47 +53,31 @@
                     <li>
                       <a href="#">ABOUT</a>
                       <ul class="menu vertical" data-magellan>
-                        <li><a href="index.html#products-section">WHAT WE DO</a></li>
-                        <li><a href="index.html#customers">WHO WE SERVE</a></li>
+                        <li><a href="index.php#products-section">WHAT WE DO</a></li>
+                        <li><a href="index.php#customers">WHO WE SERVE</a></li>
                         <li class="is-dropdown-submenu-parent">
-                          <a href="index.html#companies">OUR COMPANIES</a>
+                          <a href="index.php#companies">OUR COMPANIES</a>
                           <ul class="menu" data-magellan>
-                            <li><a href="index.html#fruitproduce">IPPOLITO FRUIT &amp; PRODUCE</a></li>
-                            <li><a href="index.html#international">IPPOLITO INTERNATIONAL</a></li>
-                            <li><a href="index.html#produce">IPPOLITO PRODUCE</a></li>
-                            <li><a href="index.html#transportation">IPPOLITO TRANSPORTATION</a></li>
+                            <li><a href="index.php#fruitproduce">IPPOLITO FRUIT &amp; PRODUCE</a></li>
+                            <li><a href="index.php#international">IPPOLITO INTERNATIONAL</a></li>
+                            <li><a href="index.php#produce">IPPOLITO PRODUCE</a></li>
+                            <li><a href="index.php#transportation">IPPOLITO TRANSPORTATION</a></li>
                           </ul>
                         </li>
-                        <li><a href="index.html#history-section">OUR HISTORY</a></li>
+                        <li><a href="index.php#history-section">OUR HISTORY</a></li>
                       </ul>
                     </li>
                     <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="careers.html" class="careers">CAREERS</a></li>
+                    <li><a href="careers.php" class="careers">CAREERS</a></li>
                   </ul>
                 </div>
-              
-              </div>
-            </div>
-    
-            <div class="middle-content-section">
-              <h1>Contact Us</h1>
-              <hr class="show-for-small-only">
-              <p>We love to hear from our customers both current and potential. Whether you would like to rave about how great our spinach is, look for a quote on your long haul transportation needs or sign up to be a new wholesale outlet, please fill out the form below and we will be sure to direct your inquiry to the appropriate person. Please allow 72 hours for a response.</p>
-            </div>
-          
-            <div class="bottom-content-section" data-magellan data-threshold="0">
-              <a href="#main-content-section"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"/></svg></a>
-            </div>
-
     </div>
     
-
-    <div id="main-content-section" data-magellan-target="main-content-section">
-
       <div class="grid-x grid-padding-x" id="careers-header">
         <div class="large-12 cell">
-            <h1>Contact The Ippolito Group</h1>
-        </div>
+            <h1 style="padding-top: 16px;">Contact The Ippolito Group</h1>
+            <p>We love to hear from our customers both current and potential. Whether you would like to rave about how great our spinach is, look for a quote on your long haul transportation needs or sign up to be a new wholesale outlet, please fill out the form below and we will be sure to direct your inquiry to the appropriate person. Please allow 72 hours for a response.</p>
+          </div>
     </div>
 
     <form>
@@ -78,48 +85,28 @@
         <div class="grid-x grid-padding-x">
           <div class="cell large-6 medium-6 small-12 contact-info">
             <h1 class="contact-heading">Ippolito Group</h1>
+            <hr>
             <p>
-              201 North Service Road
+            
+              <b>201 North Service Road
               <br>
-              Burlington, Ontario, Canada, L7P 5C4
+              Burlington, Ontario, Canada, L7P 5C4</b>
+              <br>
               <br>
 
               <b>Tel:</b> (905) 631-7700
               <br>
               <b>Fax:</b> (905) 639-9751
             </p>
+
           </div>
           <div class="cell large-6 medium-6 small-12 contact-info">
             <h1 class="contact-heading">Email Us</h1>
+            <hr>
             <p><b>General Inquiries:</b> <a href="mailto:info@ippolito.biz">info@ippolito.biz</a></p>
             <p><b>Customer Service:</b> <a href="mailto:customerservice@ippolito.biz">customerservice@ippolito.biz</a></p>
+
           </div>
-
-
-
-
-          <!-- <div class="medium-6 small-10 cell" id="form">
-            <label>Your Name:
-              <input type="text" placeholder="Your Name" required>
-            </label>
-            <label>Your Email:
-              <input type="email" placeholder="Your Email" required>
-            </label>
-            <label>Which company are you inquiring about?
-              <select required>
-                <option value="fruit">Ippolito Fruit &amp; Produce</option>
-                <option value="international">Ippolito International</option>
-                <option value="produce">Ippolito Produce</option>
-                <option value="transportation">Ippolito Transportation</option>
-              </select>
-            </label>
-            <label>
-              Your Message:
-              <textarea required placeholder="Your Message" class="area"></textarea>
-            </label>  
-            <input type="submit" class="button" value="Submit">
-            <input type="reset" class="button" value="Reset">    
-          </div> -->
         </div>
       </div>
     </form>
@@ -143,10 +130,6 @@
         </footer>
       </div>
     </div>
-
-
-    </div>
-  </div>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/what-input/dist/what-input.js"></script>

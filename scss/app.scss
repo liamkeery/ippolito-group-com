@@ -138,6 +138,10 @@ a:hover{
     .js-drilldown-back {
         color: white;
     }
+    
+    background: $ippolito-purple;
+    position: relative;
+    z-index: 1;
 }
 
 .top-bar-right {
@@ -168,6 +172,8 @@ a:hover{
     text-align: center;
     color: white;
     margin-top: 50px;
+    position: initial;
+    z-index: 0;
 
     h1 {
         font-family: $jomolhari;
@@ -188,12 +194,6 @@ a:hover{
         padding-top: 20px;
         padding-bottom: 30px;
         margin: 0 auto;
-    }
-
-    .color-helper {
-        background: $ippolito-purple;
-        padding: 16px;
-        opacity: 0.9;
     }
   }
 
@@ -666,8 +666,8 @@ i {
     }
 
     #careers-header {
-        h1 {
-            font-size: 1.2rem;
+        p {
+            width: 80%;
         }
 
         h3 {
@@ -678,6 +678,8 @@ i {
     .hero-full-screen {
         .middle-content-section {
             margin-top: 0;
+            position: absolute;
+            top: 70px;
 
             p {
                 padding-bottom: 0;
