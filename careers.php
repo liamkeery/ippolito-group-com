@@ -1,11 +1,11 @@
-<?php 
-    require_once 'load.php';
+<?php
+require_once 'load.php';
 
-    $displayJobs= showAllJobs();
+$displayJobs = showAllJobs();
 
-    if(!$displayJobs){
-        $message = 'Failed to get list of jobs.';
-    }
+if (!$displayJobs) {
+    $message = 'Failed to get list of jobs.';
+}
 ?>
 
 <!DOCTYPE html>
@@ -21,16 +21,37 @@
 <body>
     <div class="grid-container full" id="top" data-magellan-target="top">
 
-        <div class="hero-full-screen">
-
-            <div class="top-content-section">
-              
               <div class="title-bar" data-responsive-toggle="main-navigation" data-hide-for="medium">
                 <div class="title-bar-left"><a class="menu-text logo" href="index.php">Ippolito Group</a></div>
                     <div class="title-bar-right"><button class="menu-icon" type="button" data-toggle="main-navigation"></button></div>
               </div>
-              
-              <div class="top-bar" id="main-navigation">
+
+              <div id="main-navigation">
+                <ul class="vertical menu drilldown show-for-small-only" data-drilldown data-auto-height="true" data-animate-height="true" data-magellan>
+                  <li><a href="index.php">HOME</a></li>
+                  <li>
+                    <a href="#">ABOUT</a>
+                    <ul class="menu vertical nested" data-magellan>
+                      <li><a href="index.php#products-section">WHAT WE DO</a></li>
+                      <li><a href="index.php#customers">WHO WE SERVE</a></li>
+                      <li>
+                        <a href="index.php#companies">OUR COMPANIES</a>
+                        <ul class="menu vertical nested" data-magellan>
+                          <li><a href="index.php#fruitproduce">IPPOLITO FRUIT &amp; PRODUCE</a></li>
+                          <li><a href="index.php#international">IPPOLITO INTERNATIONAL</a></li>
+                          <li><a href="index.php#produce">IPPOLITO PRODUCE</a></li>
+                          <li><a href="index.php#transportation">IPPOLITO TRANSPORTATION</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="index.php#history-section">OUR HISTORY</a></li>
+                  <li><a href="contact.html">CONTACT</a></li>
+                  <li><a href="careers.php">CAREERS</a></li>
+                </ul>
+              </div>
+
+              <div class="top-bar hide-for-small-only">
                 <div class="top-bar-left">
                   <a class="menu-text logo hide-for-small-only" href="index.php">Ippolito Group</a>
                 </div>
@@ -58,28 +79,12 @@
                     <li><a href="careers.php" class="careers">CAREERS</a></li>
                   </ul>
                 </div>
-              
-              </div>
-            </div>
-    
-            <div class="middle-content-section">
-              <h1>Careers At Ippolito</h1>
-              <hr class="show-for-small-only">
-              <p>While we have evolved into a large, vertically-integrated group of companies spanning North America, we are proud to have kept the family values that we started with and that have got us to where we are. If you are interested in joining a dynamic team and helping us create the future, check out the testimonials and opportunities below.</p>
-            </div>
-          
-            <div class="bottom-content-section" data-magellan data-threshold="0">
-              <a href="#main-content-section"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"/></svg></a>
-            </div>
-
     </div>
-    
 
-    <div id="main-content-section" data-magellan-target="main-content-section">
-        
         <div class="grid-x grid-padding-x" id="careers-header">
             <div class="large-12 cell">
-                <h1>Join The Ippolito Group of Companies</h1>
+                <h1 style="padding-top: 32px;">Careers With Ippolito Group</h1>
+                <p>While we have evolved into a large, vertically-integrated group of companies spanning North America, we are proud to have kept the family values that we started with and that have got us to where we are. If you are interested in joining a dynamic team and helping us create the future, check out the testimonials and opportunities below.</p>
                 <h3>View our open opportunities below:</h3>
             </div>
         </div>
@@ -94,9 +99,9 @@
                   </tr>
                 </thead>
                 <tbody>
-                <?php while($row = $displayJobs->fetch(PDO::FETCH_ASSOC)):?>
+                <?php while ($row = $displayJobs->fetch(PDO::FETCH_ASSOC)): ?>
     <tr>
-        <td><?php echo '<a class="job" href="'.$row['job_url'].'">'.$row['job_name'].'</a>'?></td>
+        <td><?php echo '<a class="job" href="' . $row['job_url'] . '">' . $row['job_name'] . '</a>' ?></td>
     </tr>
     <?php endwhile;?>
                 </tbody>
@@ -123,12 +128,12 @@
               </footer>
             </div>
           </div>
-    
-    
-    </div>
-</div>
 
-    
+
+    </div>
+
+
+
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/what-input/dist/what-input.js"></script>

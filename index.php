@@ -24,10 +24,10 @@
 
           <div id="main-navigation">
             <ul class="vertical menu drilldown show-for-small-only" data-drilldown data-auto-height="true" data-animate-height="true" data-magellan>
-              <li><a href="#">HOME</a></li>
+              <li><a href="index.php">HOME</a></li>
               <li>
                 <a href="#">ABOUT</a>
-                <ul class="menu vertical nested">
+                <ul class="menu vertical nested" data-magellan>
                   <li><a href="#products-section">WHAT WE DO</a></li>
                   <li><a href="#customers">WHO WE SERVE</a></li>
                   <li>
@@ -53,7 +53,7 @@
             </div>
             <div class="top-bar-right">
               <ul class="dropdown menu nav" data-dropdown-menu data-magellan data-alignment="auto">
-                <li><a href="#">HOME</a></li>
+                <li><a href="index.php">HOME</a></li>
                 <li>
                   <a href="#">ABOUT</a>
                   <ul class="menu vertical" data-magellan>
