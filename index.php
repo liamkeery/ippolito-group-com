@@ -116,7 +116,7 @@
       </div>
       </div>
 
-      <h1 class="heading show-for-small-only" style="margin-bottom: 0;">Our Brands</h1>
+      <h1 class="heading show-for-small-only" style="margin-bottom: 0;" id="brand-title">Our Brands</h1>
       <div class="grid-x grid-padding-x show-for-small-only" id="logos-small">
         <hr class="logos-divide">
         <div class="small-12 col text-center">
@@ -142,7 +142,7 @@
 
         <h1 class="heading" id="products-section" data-magellan-target="products-section">What We Do</h1>
         <div class="grid-x grid-padding-x hide-for-small-only" id="tabs-services">
-          <div class="large-9 medium-12 cell products">
+          <div class="large-11 medium-12 cell products">
             <ul class="tabs" data-active-collapse="false" data-tabs id="collapsing-tabs">
               <li class="tabs-title is-active"><a href="#panel1p"><i class="fas fa-seedling"></i>Growing</a></li>
               <li class="tabs-title"><a href="#panel2p"><i class="fas fa-box-open"></i>Packing</a></li>
@@ -247,8 +247,11 @@
           <h1 class="heading" id="companies"  data-magellan-target="companies">Our Companies</h1>
           <div class="grid-x">
             <div class="media-object stack-for-small large-8 cell company block" id="fruitproduce" data-magellan-target="fruitproduce">
-              <div class="media-object-section"> 
+              <div class="media-object-section">
+              <div class="image-text-con"> 
                   <img width="456" height="456" src= "images/ippolito-fruit.png" alt="Ippolito Fruit & Produce">
+                  <div class="centered">Ippolito Fruit &amp; Produce LTD.</div>
+              </div>
               </div>
               <div class="media-object-section">
                 <div class="content-wrapper">
@@ -262,7 +265,10 @@
             <div class="grid-x">
               <div class="media-object stack-for-small large-8 cell company block" id="international" data-magellan-target="international">
                 <div class="media-object-section"> 
+                  <div class="image-text-con">
                     <img width="456" height="456" src= "images/ippolito-int.png" alt="Ippolito International">
+                    <div class="centered">Ippolito International</div>
+                  </div>
                 </div>
                 <div class="media-object-section">
                   <div class="content-wrapper short">
@@ -276,8 +282,11 @@
             <div class="grid-x">
               <div class="media-object stack-for-small large-8 cell company block" id="produce" data-magellan-target="produce">
                 <div class="media-object-section"> 
+                <div class="image-text-con">
                     <img width="456" height="456" src= "images/ippolito-produce.png" alt="Ippolito Produce">
-                </div>
+                    <div class="centered">Ippolito Produce<br>(Ontario Food Terminal)</div>
+</div>
+                  </div>
                 <div class="media-object-section">
                   <div class="content-wrapper short">
                   <p>Since our first opening in 1998 we have been proudly serving customers at the Ontario Food Terminal. We have over 200 items available in a variety of formats from bulk to individually packaged on a daily basis.</p>
@@ -290,7 +299,10 @@
             <div class="grid-x">
               <div class="media-object stack-for-small large-8 cell company" id="transportation" data-magellan-target="transportation">
                 <div class="media-object-section"> 
+                <div class="image-text-con">
                     <img width="456" height="456" src="images/ippolito-trans.png" alt="Ippolito Transportation">
+                    <div class="centered">Ippolito Transportation</div>
+</div>
                 </div>
                 <div class="media-object-section">
                   <div class="content-wrapper">
