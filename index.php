@@ -81,7 +81,6 @@
 
         <div class="middle-content-section">
           <h1>The Ippolito Group of Companies</h1>
-          <hr class="show-for-small-only">
           <p class="hide-for-small-only">From the humble roots of a fruit and vegetable stand established over 80 years ago, to today’s family of vertically integrated companies,  the Ippolito Group grows, packs, processes and transports millions of pounds of produce across North America in the pursuit of making healthy eating easy.</p>
           <div class="color-helper show-for-small-only">
           <p>From the humble roots of a fruit and vegetable stand established over 80 years ago, to today’s family of vertically integrated companies,  the Ippolito Group grows, packs, processes and transports millions of pounds of produce across North America in the pursuit of making healthy eating easy.</p>
@@ -255,7 +254,7 @@
               </div>
               <div class="media-object-section">
                 <div class="content-wrapper">
-                <p>Canadian and family-owned, we have been in the Produce business since the 1930’s. We are known for leafy greens and Brussels Sprouts, but we sell a full offering of commodities straight from the field in addition to our value-added salads and vegetables. We serve the Eastern part of Canada and the U.S.  from our processing facilities in Ontario.</p>
+                <p>Canadian and family-owned, we have been in the Produce business since the 1930’s. We are known for leafy greens and Brussels Sprouts, but we sell a full offering of commodities straight from the field in addition to our value-added salads and vegetables. We serve the Eastern part of Canada and the U.S. from our state of the art facilities in Ontario Canada.</p>
               <a href="http://www.ippolitoproduce.com/" class="button">Visit Website</a>
             </div>
               </div>
@@ -496,10 +495,10 @@
                 <footer>
                   <p>Copyright &copy; 2020 Ippolito Group of Companies</p>
                   <hr>
-                  <ul class="menu small" data-magellan>
-                    <li><a href="careers.php">Careers</a></li>
-                    <li><a href="#top">Back To Top <i class="fas fa-angle-up"></i></a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                  <ul class="menu small footer-menu" data-magellan>
+                    <li><a class="visit" href="careers.php">Careers</a></li>
+                    <li><a class="visit" href="#top">Back To Top <i class="fas fa-angle-up"></i></a></li>
+                    <li><a class="visit" href="contact.html">Contact</a></li>
                   </ul>
                   <ul class="menu icons">
                     <li><a href="https://www.linkedin.com/company/ippolitogroup"><i class="fab fa-linkedin"></i></a></li>

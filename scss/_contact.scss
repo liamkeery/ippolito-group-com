@@ -117,6 +117,10 @@ label {
         color: $black;
     }
 
+    a:visited {
+        color: $black !important;
+    }
+
     a:hover {
         color: $black;
         text-decoration: underline;
