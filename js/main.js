@@ -1,1 +1,1 @@
-console.log('Main JS Connected');
+console.log("Main JS Connected");

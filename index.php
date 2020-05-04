@@ -106,7 +106,7 @@
         <div class="grid-x grid-padding-x hide">
         <div class="callout cell" data-closable>
           <div class="alert-content">
-          <h5>Alert Title</h5>
+          <h5>Alert</h5>
           <p>When you're done reading it, click the close button in the corner to dismiss this alert.</p>
           <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
             <span aria-hidden="true">&times;</span>
@@ -152,13 +152,13 @@
         
             <div class="tabs-content" data-tabs-content="collapsing-tabs" id="top-tabs">
               <div class="tabs-panel is-active" id="panel1p">
-                <p>With growing fields in California and Arizona, and growing partners in Florida, Texas, New Jersey, Ontario, Canada and Quebec Canada, the Ippolito Group can provide a full range of produce year around.</p>
+                <p>With growing fields in California and Arizona, and growing partners in Mexico. Nevada, Florida, Texas, New Jersey, Ontario, Canada and Quebec Canada, the Ippolito Group can provide a full range of produce year around.</p>
               </div>
               <div class="tabs-panel" id="panel2p">
                 <p>As members of the Arizona and California Leafy Green Marketing Agreement you can be assured that our field packed products meet the highest standards of food safety as they flow through our cutting edge cooling facilities.</p>
               </div>
               <div class="tabs-panel" id="panel3p">
-                <p>Our state-of-the-art facilities in Ontario, California and Arizona wash and process hundreds of tons of leafy greens in a variety of packaging options every year and our sustainability practices ensure we minimize our environmental footprint.</p>
+                <p>Our state-of-the-art facilities in Ontario, California and Arizona wash and process hundreds of tons of leafy greens, brussels sprouts, broccoli, squash and other fresh vegetable items in a variety of packaging options every year and our sustainability practices ensure we minimize our environmental footprint.</p>
               </div>
               <div class="tabs-panel" id="panel4p">
                 <p>Our extensive network in North America gives us control over our own supply chain as well as allowing us to move your freight with the same care and expertise we apply to our own.</p>
@@ -179,7 +179,7 @@
                 <a href="#" class="accordion-title"><i class="fas fa-seedling"></i>Growing</a>
           
                 <div class="accordion-content" data-tab-content>
-                  <p>With growing fields in California and Arizona, and growing partners in Florida, Texas, New Jersey, Ontario, Canada and Quebec Canada, the Ippolito Group can provide a full range of produce year around.</p>
+                  <p>With growing fields in California and Arizona, and growing partners in Mexico, Nevada, Florida, Texas, New Jersey, Ontario, Canada and Quebec Canada, the Ippolito Group can provide a full range of produce year around.</p>
                 </div>
               </li>
               <li class="accordion-item" data-accordion-item>
@@ -195,7 +195,7 @@
                 <a href="#" class="accordion-title"><i class="fas fa-cogs"></i>Processing</a>
           
                 <div class="accordion-content" data-tab-content>
-                  <p>Our state-of-the-art facilities in Ontario, California and Arizona wash and process hundreds of tons of leafy greens in a variety of packaging options every year and our sustainability practices ensure we minimize our environmental footprint.</p>
+                  <p>Our state-of-the-art facilities in Ontario, California and Arizona wash and process hundreds of tons of leafy greens, brussels sprouts, broccoli, squash and other fresh vegetable items in a variety of packaging options every year and our sustainability practices ensure we minimize our environmental footprint.</p>
                 </div>
               </li>
               <li class="accordion-item" data-accordion-item>
@@ -386,7 +386,7 @@
                       <br>
                       <hr>
                       <p class="date">2018</p>
-                      Joel Ippolito takes sole ownership in Ippolito Fruit & Produce Ltd. And Ippolito Transportation Inc.
+                      Joel Ippolito takes sole ownership in Ippolito Fruit & Produce Ltd. and Ippolito Transportation Inc.
                       <br>
                       <br>
                       <hr>
@@ -472,7 +472,7 @@
                       <br>
                       <hr>
                       <p class="date">2018</p>
-                      Joel Ippolito takes sole ownership in Ippolito Fruit & Produce Ltd. And Ippolito Transportation Inc.
+                      Joel Ippolito takes sole ownership in Ippolito Fruit & Produce Ltd. and Ippolito Transportation Inc.
                       <br>
                       <br>
                       <hr>

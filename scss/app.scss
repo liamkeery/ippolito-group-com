@@ -136,11 +136,20 @@ a:hover{
 
     .js-drilldown-back {
         color: white;
+        text-transform: uppercase;
     }
     
     background: $ippolito-purple;
     position: relative;
     z-index: 1;
+}
+
+.drilldown .is-drilldown-submenu-parent>a::after {
+    border-color: transparent transparent transparent #ffffff;
+}
+
+.drilldown .js-drilldown-back>a::before {
+    border-color: transparent #ffffff transparent transparent;
 }
 
 .top-bar-right {
@@ -360,8 +369,9 @@ a:hover{
     }
 
     img {
-        margin-top: 20px;
-        max-height: 100px;
+        padding-top: 20px;
+        max-width: 100px;
+        margin: 0 auto;
     }
 
     p {
@@ -384,7 +394,7 @@ a:hover{
 // Companies
 
 .company {
-    background: #ffffff;
+    background: #ffffff; 
     border-radius: 15px;
     margin: 0 auto;
     max-width: 912px;
