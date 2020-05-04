@@ -2,6 +2,9 @@ var gulp          = require('gulp');
 var browserSync   = require('browser-sync').create();
 var $             = require('gulp-load-plugins')();
 var autoprefixer  = require('autoprefixer');
+var imagemin = require('gulp-imagemin');
+var uglify = require('gulp-uglify');
+var pipeline = require('readable-stream').pipeline;
 
 var sassPaths = [
   'node_modules/foundation-sites/scss',
@@ -22,6 +25,14 @@ function sass() {
     .pipe(browserSync.stream());
 };
 
+gulp.task('compress', function () {
+  return pipeline(
+        gulp.src('js/*.js'),
+        uglify(),
+        gulp.dest('js')
+  );
+});
+
 function serve() {
   browserSync.init({
     server: "./"
@@ -39,3 +50,9 @@ gulp.task('sass', sass);
 gulp.task('serve', gulp.series('sass', serve));
 //gulp.task('default', gulp.series('sass', serve));
 gulp.task('default', gulp.series('sass'));
+
+gulp.task('image', function() {
+  gulp.src('images/logos/*')
+      .pipe(imagemin())
+      .pipe(gulp.dest('images/logos'));
+})
